@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panchmarhi Trip Planner</title>
+    <meta name="description" content="A stylish 2-day Panchmarhi trip website for friends with checklist, budget planner, and travel essentials." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">One Night • Two Days • Panchmarhi, MP</p>
+        <h1>Goa vibes, hill vibes, and a football-fueled squad adventure.</h1>
+        <p class="hero-copy">
+          This is your stylish trip companion for a fun-filled escape to Panchmarhi with your friends. Plan the route,
+          pack smart, keep the budget in check, and let the adventure begin.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#planner" class="btn btn-primary">Start Planning</a>
+          <a href="#checklist" class="btn btn-secondary">View Checklist</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong id="driverInfo">Driver: Add phone</strong>
+            <span>Critical contact</span>
+          </div>
+          <div>
+            <strong id="studentInfo">Students: 0</strong>
+            <span>Squad size</span>
+          </div>
+          <div>
+            <strong id="budgetInfo">Budget: Add amount</strong>
+            <span>Trip balance</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h2>Trip Essentials</h2>
+        <label class="field">
+          <span>Driver phone number</span>
+          <input id="driverPhone" type="tel" placeholder="+91 98765 43210" />
+        </label>
+        <label class="field">
+          <span>Number of students</span>
+          <input id="studentCount" type="number" min="1" max="20" placeholder="6" />
+        </label>
+        <label class="field">
+          <span>Trip budget (₹)</span>
+          <input id="tripBudget" type="number" min="1000" step="500" placeholder="12000" />
+        </label>
+        <button class="btn btn-primary full" id="saveTripBtn">Save trip details</button>
+        <p class="helper">Your details will appear instantly on this page.</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="planner" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Trip blueprint</p>
+          <h2>One night, two days, zero chaos</h2>
+        </div>
+
+        <div class="cards-grid">
+          <article class="info-card">
+            <h3>Day 1: Arrival + sunset magic</h3>
+            <ul>
+              <li>Leave early in the morning and reach Panchmarhi by afternoon.</li>
+              <li>Check in, freshen up, and walk to the scenic viewpoints.</li>
+              <li>Enjoy snacks, music, a little football, and a relaxed dinner.</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <h3>Day 2: Adventure + return</h3>
+            <ul>
+              <li>Wake up for sunrise views and a light breakfast.</li>
+              <li>Visit key spots like Bee Falls, Dhoopgarh, and local markets.</li>
+              <li>Pack up, click group photos, and head back with smiles.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Goals & destinations</p>
+          <h2>Make this trip memorable for every friend</h2>
+        </div>
+
+        <div class="goals-grid">
+          <div class="goal-card">
+            <h3>Trip goals</h3>
+            <p>Relax, click photos, enjoy music, play games, and create memories stronger than any group chat.</p>
+          </div>
+          <div class="goal-card">
+            <h3>Must-see places</h3>
+            <p>Bee Falls, Dhoopgarh, Panchmarhi Lake, Sunset Point, and the misty hill roads.</p>
+          </div>
+          <div class="goal-card">
+            <h3>Squad energy</h3>
+            <p>Cards, ludo, music, cricket, football, and a little friendly chaos in the best way.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="checklist" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Packing checklist</p>
+          <h2>Pack light, plan smart, and stay ready</h2>
+        </div>
+
+        <div class="checklist-grid">
+          <article class="check-card">
+            <h3>Clothes to carry</h3>
+            <ul>
+              <li><input type="checkbox" /> 3-4 T-shirts</li>
+              <li><input type="checkbox" /> 2 pairs of pants/jeans</li>
+              <li><input type="checkbox" /> Warm jacket</li>
+              <li><input type="checkbox" /> Sleepwear</li>
+              <li><input type="checkbox" /> Extra socks</li>
+            </ul>
+          </article>
+
+          <article class="check-card">
+            <h3>Food to carry</h3>
+            <ul>
+              <li><input type="checkbox" /> Biscuits</li>
+              <li><input type="checkbox" /> Chips & namkeen</li>
+              <li><input type="checkbox" /> Water bottles</li>
+              <li><input type="checkbox" /> Energy bars</li>
+              <li><input type="checkbox" /> Maggi / instant snacks</li>
+            </ul>
+          </article>
+
+          <article class="check-card">
+            <h3>Games & fun gear</h3>
+            <ul>
+              <li><input type="checkbox" /> Cards</li>
+              <li><input type="checkbox" /> Ludo / Uno</li>
+              <li><input type="checkbox" /> Cricket bat & ball</li>
+              <li><input type="checkbox" /> Football</li>
+              <li><input type="checkbox" /> Bluetooth speaker</li>
+            </ul>
+          </article>
+
+          <article class="check-card">
+            <h3>Essentials</h3>
+            <ul>
+              <li><input type="checkbox" /> Power bank</li>
+              <li><input type="checkbox" /> Charger</li>
+              <li><input type="checkbox" /> Sunscreen</li>
+              <li><input type="checkbox" /> Basic medicines</li>
+              <li><input type="checkbox" /> ID proof</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section budget-section">
+        <div class="section-heading">
+          <p class="eyebrow">Budget planner</p>
+          <h2>Smart spending, smooth trip</h2>
+        </div>
+
+        <div class="budget-card">
+          <div class="budget-summary">
+            <h3 id="budgetAmountLabel">Estimated plan</h3>
+            <p id="budgetMessage">Enter your budget to see a smart split.</p>
+            <div class="budget-bars">
+              <div><span>Travel</span><strong id="travelShare">0%</strong></div>
+              <div><span>Stay</span><strong id="stayShare">0%</strong></div>
+              <div><span>Food</span><strong id="foodShare">0%</strong></div>
+              <div><span>Fun</span><strong id="funShare">0%</strong></div>
+            </div>
+          </div>
+          <div class="budget-tips">
+            <h3>Quick tips</h3>
+            <p>Book stay early, carry snacks to cut food costs, and keep a small emergency buffer.</p>
+            <div class="tip-pill">Budget friendly</div>
+            <div class="tip-pill">Group vibe</div>
+            <div class="tip-pill">Photo-worthy</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fun-section">
+        <div class="section-heading">
+          <p class="eyebrow">Cristiano Ronaldo vibe</p>
+          <h2>Because every squad needs a little GOAT energy</h2>
+        </div>
+
+        <div class="fun-card">
+          <div>
+            <h3>Ronaldo mode activated</h3>
+            <p>Bring the energy. Score memories, celebrate every sunset, and make the group trip feel like a championship win.</p>
+            <ul>
+              <li>Match-day playlist</li>
+              <li>Mini football challenge</li>
+              <li>Victory photo at the top</li>
+            </ul>
+          </div>
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=900&q=80" alt="Football energy and celebration" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made for your Panchmarhi squad • Ready for the best 2-day plan ever</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
